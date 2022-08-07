@@ -53,9 +53,32 @@ def csv_downloader(data):
 def run():
 
      
-     page=st.sidebar.radio('Info', OPTIONS)
+     #st.title("Archaeological stone classification project")
+     #file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
 
-     if page == 'Model Metadata':
+        
+     page=st.sidebar.radio('Navigation', OPTIONS)
+
+     if page == 'Predict':
+
+         st.title("Archaeological stone classification project")
+         file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
+     
+         if file_upload is not None:
+
+            data = pd.read_csv(file_upload)
+            predictions = predict_model(estimator=model,data=data)
+            st.write(predictions)
+            csv_downloader(predictions) 
+    
+
+     elif page == 'Project':
+         st.sidebar.write("""
+         ## About
+         Projec Summary""") 
+
+
+     elif page == 'Model Metadata':
          st.sidebar.image('image.jpg')
          st.sidebar.write("""
          ## About""") 
@@ -93,7 +116,7 @@ Pipeline(steps=[('dtypes',
            DataTypes_Auto_infer(ml_usecase='classification',
            <...>           n_estimators=150, n_jobs=-1,
            random_state=123)]])
-           
+
 Length:      24
 
 Docstring:  
@@ -191,31 +214,30 @@ https://scikit-learn.org/stable
          metadata
                                       
          st.download_button('Download Model Metadata', metadata) 
-     else:
+
+     elif page == 'Model Development':
          st.sidebar.image('image2.jpg')
          st.sidebar.write("""
          ## About
          Aqui va el enlace directo al notebook del modelo
          [GitHub](https://github.com/DASA39)""")            
      
-     
-    
-     
-     
-     st.title("Archaeological stone classification project")
-     file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
-     
-     
-    
-    
-     if file_upload is not None:
-        data = pd.read_csv(file_upload)
-        predictions = predict_model(estimator=model,data=data)
-        st.write(predictions)
-        csv_downloader(predictions)
 
      
+     
+    
+    
+     #if file_upload is not None:
+        #data = pd.read_csv(file_upload)
+        #predictions = predict_model(estimator=model,data=data)
+        #st.write(predictions)
+        #csv_downloader(predictions)
 
+
+# Función de Interfaz de Usuario
+#def run_UI():
+
+   
    
 if __name__ == '__main__':
    

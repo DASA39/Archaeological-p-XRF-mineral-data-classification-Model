@@ -648,3 +648,239 @@
 2022-08-07 11:33:23,000:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
 2022-08-07 11:33:36,426:INFO:Initializing load_model()
 2022-08-07 11:33:36,427:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:38:40,534:INFO:Initializing load_model()
+2022-08-07 11:38:40,535:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:43:48,109:INFO:Initializing load_model()
+2022-08-07 11:43:48,110:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:43:55,995:INFO:Initializing load_model()
+2022-08-07 11:43:55,996:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:43:59,345:INFO:Initializing load_model()
+2022-08-07 11:43:59,347:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:44:01,119:INFO:Initializing load_model()
+2022-08-07 11:44:01,119:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:44:02,865:INFO:Initializing load_model()
+2022-08-07 11:44:02,866:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:45:03,570:INFO:Initializing load_model()
+2022-08-07 11:45:03,571:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:45:11,245:INFO:Initializing load_model()
+2022-08-07 11:45:11,246:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:45:13,346:INFO:Initializing load_model()
+2022-08-07 11:45:13,348:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:45:14,674:INFO:Initializing load_model()
+2022-08-07 11:45:14,679:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:45:16,241:INFO:Initializing load_model()
+2022-08-07 11:45:16,242:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:42,271:INFO:Initializing load_model()
+2022-08-07 11:46:42,272:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:46,275:INFO:Initializing load_model()
+2022-08-07 11:46:46,276:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:47,530:INFO:Initializing load_model()
+2022-08-07 11:46:47,531:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:49,064:INFO:Initializing load_model()
+2022-08-07 11:46:49,065:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:49,830:INFO:Initializing load_model()
+2022-08-07 11:46:49,833:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:50,976:INFO:Initializing load_model()
+2022-08-07 11:46:50,978:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:52,250:INFO:Initializing load_model()
+2022-08-07 11:46:52,252:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:54,260:INFO:Initializing load_model()
+2022-08-07 11:46:54,261:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:46:54,793:INFO:Initializing load_model()
+2022-08-07 11:46:54,793:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:47:30,755:INFO:Initializing load_model()
+2022-08-07 11:47:30,756:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:47:32,401:INFO:Initializing load_model()
+2022-08-07 11:47:32,402:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:47:33,594:INFO:Initializing load_model()
+2022-08-07 11:47:33,595:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:47:34,485:INFO:Initializing load_model()
+2022-08-07 11:47:34,486:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:05,385:INFO:Initializing load_model()
+2022-08-07 11:48:05,386:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:12,893:INFO:Initializing load_model()
+2022-08-07 11:48:12,895:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:16,273:INFO:Initializing load_model()
+2022-08-07 11:48:16,273:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:18,676:INFO:Initializing load_model()
+2022-08-07 11:48:18,677:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:20,675:INFO:Initializing load_model()
+2022-08-07 11:48:20,676:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:21,461:INFO:Initializing load_model()
+2022-08-07 11:48:21,461:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:22,221:INFO:Initializing load_model()
+2022-08-07 11:48:22,222:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:23,569:INFO:Initializing load_model()
+2022-08-07 11:48:23,570:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:24,407:INFO:Initializing load_model()
+2022-08-07 11:48:24,408:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:25,450:INFO:Initializing load_model()
+2022-08-07 11:48:25,451:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:48:55,304:INFO:Initializing load_model()
+2022-08-07 11:48:55,306:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 11:54:38,722:INFO:Initializing load_model()
+2022-08-07 11:54:38,723:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:04,455:INFO:Initializing load_model()
+2022-08-07 12:00:04,456:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:12,976:INFO:Initializing load_model()
+2022-08-07 12:00:12,977:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:15,933:INFO:Initializing load_model()
+2022-08-07 12:00:15,933:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:20,849:INFO:Initializing load_model()
+2022-08-07 12:00:20,850:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:22,271:INFO:Initializing load_model()
+2022-08-07 12:00:22,273:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:23,015:INFO:Initializing load_model()
+2022-08-07 12:00:23,016:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:48,128:INFO:Initializing load_model()
+2022-08-07 12:00:48,129:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:52,326:INFO:Initializing load_model()
+2022-08-07 12:00:52,327:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:57,976:INFO:Initializing load_model()
+2022-08-07 12:00:57,977:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:00:59,991:INFO:Initializing load_model()
+2022-08-07 12:00:59,991:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:01:02,202:INFO:Initializing load_model()
+2022-08-07 12:01:02,203:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:01:12,655:INFO:Initializing load_model()
+2022-08-07 12:01:12,656:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:01:17,296:INFO:Initializing load_model()
+2022-08-07 12:01:17,296:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:01:20,554:INFO:Initializing load_model()
+2022-08-07 12:01:20,555:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:01:58,725:INFO:Initializing load_model()
+2022-08-07 12:01:58,728:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:02,423:INFO:Initializing load_model()
+2022-08-07 12:02:02,426:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:06,807:INFO:Initializing load_model()
+2022-08-07 12:02:06,808:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:09,067:INFO:Initializing load_model()
+2022-08-07 12:02:09,068:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:38,375:INFO:Initializing load_model()
+2022-08-07 12:02:38,377:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:42,052:INFO:Initializing load_model()
+2022-08-07 12:02:42,055:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:47,118:INFO:Initializing load_model()
+2022-08-07 12:02:47,120:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:02:47,522:INFO:Initializing predict_model()
+2022-08-07 12:02:47,522:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesClassifier(class_weight={}, criterion='entropy',
+                                      max_depth=5, max_features=1.0,
+                                      min_impurity_decrease=0.0002,
+                                      min_samples_leaf=5, min_samples_split=10,
+                                      n_estimators=150, n_jobs=-1,
+                                      random_state=123)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-08-07 12:02:47,523:INFO:Checking exceptions
+2022-08-07 12:02:47,523:INFO:Preloading libraries
+2022-08-07 12:02:56,964:INFO:Initializing load_model()
+2022-08-07 12:02:56,965:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:03:40,131:INFO:Initializing load_model()
+2022-08-07 12:03:40,132:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:03:43,902:INFO:Initializing load_model()
+2022-08-07 12:03:43,904:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:04:25,140:INFO:Initializing load_model()
+2022-08-07 12:04:25,141:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:28,948:INFO:Initializing load_model()
+2022-08-07 12:05:28,949:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:32,928:INFO:Initializing load_model()
+2022-08-07 12:05:32,929:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:36,112:INFO:Initializing load_model()
+2022-08-07 12:05:36,113:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:38,316:INFO:Initializing load_model()
+2022-08-07 12:05:38,318:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:41,453:INFO:Initializing load_model()
+2022-08-07 12:05:41,454:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:46,063:INFO:Initializing load_model()
+2022-08-07 12:05:46,064:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:05:46,217:INFO:Initializing predict_model()
+2022-08-07 12:05:46,217:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesClassifier(class_weight={}, criterion='entropy',
+                                      max_depth=5, max_features=1.0,
+                                      min_impurity_decrease=0.0002,
+                                      min_samples_leaf=5, min_samples_split=10,
+                                      n_estimators=150, n_jobs=-1,
+                                      random_state=123)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-08-07 12:05:46,218:INFO:Checking exceptions
+2022-08-07 12:05:46,218:INFO:Preloading libraries
+2022-08-07 12:05:50,312:INFO:Initializing load_model()
+2022-08-07 12:05:50,313:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:03,930:INFO:Initializing load_model()
+2022-08-07 12:06:03,930:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:16,751:INFO:Initializing load_model()
+2022-08-07 12:06:16,753:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:30,191:INFO:Initializing load_model()
+2022-08-07 12:06:30,193:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:30,338:INFO:Initializing predict_model()
+2022-08-07 12:06:30,338:INFO:predict_model(estimator=Pipeline(steps=[('dtypes',
+                 DataTypes_Auto_infer(ml_usecase='classification',
+                                      target='target')),
+                ('imputer',
+                 Simple_Imputer(categorical_strategy='not_available',
+                                fill_value_categorical=None,
+                                fill_value_numerical=None,
+                                numeric_strategy='mean',
+                                target_variable=None)),
+                ('new_levels1',
+                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
+                                                                         'frequent',
+                                                    targ...
+                ('clean_names', Clean_Colum_Names()),
+                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
+                ('dfs', 'passthrough'), ('pca', 'passthrough'),
+                ['trained_model',
+                 ExtraTreesClassifier(class_weight={}, criterion='entropy',
+                                      max_depth=5, max_features=1.0,
+                                      min_impurity_decrease=0.0002,
+                                      min_samples_leaf=5, min_samples_split=10,
+                                      n_estimators=150, n_jobs=-1,
+                                      random_state=123)]]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=MLUsecase.CLASSIFICATION, display=None)
+2022-08-07 12:06:30,339:INFO:Checking exceptions
+2022-08-07 12:06:30,339:INFO:Preloading libraries
+2022-08-07 12:06:37,742:INFO:Initializing load_model()
+2022-08-07 12:06:37,743:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:48,132:INFO:Initializing load_model()
+2022-08-07 12:06:48,132:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:06:59,495:INFO:Initializing load_model()
+2022-08-07 12:06:59,495:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:07:56,913:INFO:Initializing load_model()
+2022-08-07 12:07:56,914:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:08:42,166:INFO:Initializing load_model()
+2022-08-07 12:08:42,167:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:08:57,957:INFO:Initializing load_model()
+2022-08-07 12:08:57,958:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:09:00,376:INFO:Initializing load_model()
+2022-08-07 12:09:00,377:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
+2022-08-07 12:12:35,189:INFO:Initializing load_model()
+2022-08-07 12:12:35,190:INFO:load_model(model_name=deployment_23072022, platform=None, authentication=None, verbose=True)
