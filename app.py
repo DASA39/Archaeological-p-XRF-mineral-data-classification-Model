@@ -8,12 +8,12 @@ import time
 from PIL import Image
 im = Image.open("image.jpg")
 st.set_page_config(
-         page_title="Iberian Archaeological Mineral Classification",
-         page_icon= im,
-         initial_sidebar_state="expanded",
-         menu_items={
-            'Report a bug': "https://github.com/DASA39",
-            'About': """            
+    page_title="Iberian Archaeological Mineral Classification",
+    page_icon=im,
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Report a bug': "https://github.com/DASA39",
+        'About': """            
          If you're seeing this, we would love your contribution! If you find bugs, please reach out or create an issue on our 
          [GitHub](https://github.com/DASA39) repository. If you find that this interface doesn't do what you need it to, you can create an feature request 
          at our repository or better yet, contribute a pull request of your own. You can reach out to the team on LinkedIn.
@@ -26,64 +26,119 @@ st.set_page_config(
          
         -Daniel Sánchez-Gómez
         """
-         })
+    })
 
 timestr = time.strftime("%Y%m%d-%H%M")
 model = load_model('deployment_23072022')
 
 OPTIONS = ['Predict', 'Project', 'Model Metadata', 'Model Development']
 
-#Función para usar el modelo (predicciones)
+# Función para usar el modelo (predicciones)
+
+
 def predict(model, input_df):
     predictions_df = predict_model(estimator=model, data=input_df)
     predictions = predictions_df['Label'][0]
-    
+
     return predictions
 
 # Función para descargar el csv generado
+
+
 def csv_downloader(data):
     csvfile = data.to_csv()
     b64 = base64.b64encode(csvfile.encode()).decode()
     new_filename = "predictions_{}_.csv".format(timestr)
     st.markdown("#### Download File ###")
     href = f'<a href="data:file/csv;base64,{b64}" download="{new_filename}">Click Here!</a>'
-    st.markdown(href,unsafe_allow_html=True)
+    st.markdown(href, unsafe_allow_html=True)
 
 # Función principal
+
+
 def run():
 
-     
-     #st.title("Archaeological stone classification project")
-     #file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
+    #st.title("Archaeological stone classification project")
+    #file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
 
-        
-     page=st.sidebar.radio('Navigation', OPTIONS)
+    page = st.sidebar.radio('Navigation', OPTIONS)
 
-     if page == 'Predict':
+    if page == 'Predict':
 
-         st.title("Archaeological stone classification project")
-         file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
-     
-         if file_upload is not None:
+        st.title("Archaeological stone classification project")
+        file_upload = st.file_uploader(
+            "Upload csv file for predictions", type=["csv"])
+
+        if file_upload is not None:
 
             data = pd.read_csv(file_upload)
-            predictions = predict_model(estimator=model,data=data)
+            predictions = predict_model(estimator=model, data=data)
             st.write(predictions)
-            csv_downloader(predictions) 
-    
-
-     elif page == 'Project':
-         st.sidebar.write("""
+            csv_downloader(predictions)
+        st.sidebar.write("""
          ## About
-         Projec Summary""") 
+          This is the core of the application. A Machine Learning model has been developed and trained to predict the mineral class to which a sample obtained from XRF belongs.
+          Once a csv file has been upload, the model will predict and display the results in a new column called Label as well
+          as the probability with which the algorithm scores its prediction.
+          """)
 
+    elif page == 'Project':
+        st.header("Exploring complexity through amber and variscite. Computational archaeology and geoarchaeological data in the Late Prehistory of the Iberian peninsula. (4th-to 2nd millennia BC)")
+        abstract = (""" 
+         
+         ## Abstract:
+         
+Since the expansion of the Neolithic across the Mediterranean, with the arrival and
+consolidation of village life and agriculture, long-distance exchange experiences 
+an unusual growth, and exotic items become an important means of displaying new 
+roles and social differences within and between communities. The use and association 
+of exotic items with specific individuals increases as social complexity grows and 
+it becomes more necessary to enhance social differences and exhibit the status of 
+the bearer. The study of the geographical origin and the Spatio-temporal distribution 
+patterns of exotic raw materials and their products are trending topics in European 
+archaeological research since they are considered key to the understanding of social 
+interaction and the mobility patterns of individuals and /or goods at different scales. 
+Amber and variscite like minerals are two of the most used materials for the 
+elaboration of body adornments in prehistory that have both, an important weight in 
+the archaeological record and a relevant research tradition in the Iberian Peninsula 
+context. Thanks to the development of novel chemical analytical techniques, which are 
+both portable and non-destructive, in the last ten years it has been possible to record
+data of thousands of items of personal adornment made out of amber and variscite from 
+more than 900 archaeological sites on the Iberian Peninsula through different projects, 
+which represents a first-rate experimental data set for the study of these subjects.
+Despite the existence of such relevant data sets, to date, there are both methodological
+and theoretical challenges in extracting knowledge from this type of resources due to the
+lack of comprehensive studies with a data-centred approach. Regarding the study of raw
+materials like amber or variscite minerals, it is still necessary to make exhaustive
+inventories of Iberian sources, mineralogical characterisation of items, and systematisation 
+of scattered and unpublished data among other urgent tasks that will improve or 
+reconsider provenance models used to explain the socio-economic dynamics in late prehistory.
+Through the use of different techniques of Computational archaeology such as Data
+mining and Machine Learning, the aim of this doctoral program is to explore a data driven
+approach to solve some of the main methodological challenges in the study of the
+socio-economic complexity in the late prehistory of the Iberian Peninsula and develop an
+Open Access approach for the publication of results in accordance with the necessity of
+digitalization of humanities.
 
-     elif page == 'Model Metadata':
-         st.sidebar.image('image.jpg')
-         st.sidebar.write("""
-         ## About""") 
-         metadata =(
- """Pipeline(steps=[('dtypes',
+         """)
+        st.sidebar.write("""
+         ## About
+
+### Summary:
+
+The aim of this doctoral program is to explore a data driven
+approach to solve some of the main methodological challenges in the study of the
+socio-economic complexity in the late prehistory of the Iberian Peninsula and develop an
+Open Access approach for the publication of results in accordance with the necessity of
+digitalization of humanities.""")
+        abstract
+
+    elif page == 'Model Metadata':
+        st.sidebar.image('image.jpg')
+        st.sidebar.write("""
+         ## About""")
+        metadata = (
+            """Pipeline(steps=[('dtypes',
                  DataTypes_Auto_infer(ml_usecase='classification',
                                       target='target')),
                 ('imputer',
@@ -211,34 +266,28 @@ https://pycaret.org
 https://scikit-learn.org/stable
 
                   """)
-         metadata
-                                      
-         st.download_button('Download Model Metadata', metadata) 
+        metadata
 
-     elif page == 'Model Development':
-         st.sidebar.image('image2.jpg')
-         st.sidebar.write("""
+        st.download_button('Download Model Metadata', metadata)
+
+    elif page == 'Model Development':
+        st.sidebar.image('image2.jpg')
+        st.sidebar.write("""
          ## About
          Aqui va el enlace directo al notebook del modelo
-         [GitHub](https://github.com/DASA39)""")            
-     
+         [GitHub](https://github.com/DASA39)""")
 
-     
-     
-    
-    
-     #if file_upload is not None:
-        #data = pd.read_csv(file_upload)
-        #predictions = predict_model(estimator=model,data=data)
-        #st.write(predictions)
-        #csv_downloader(predictions)
+    # if file_upload is not None:
+       #data = pd.read_csv(file_upload)
+       #predictions = predict_model(estimator=model,data=data)
+       # st.write(predictions)
+       # csv_downloader(predictions)
 
 
 # Función de Interfaz de Usuario
-#def run_UI():
+# def run_UI():
 
-   
-   
+
 if __name__ == '__main__':
-   
+
     run()
