@@ -126,6 +126,11 @@ digitalization of humanities.
 
 ### Summary:
 
+Exploring complexity through amber and variscite. Computational archaeology and
+geoarchaeological data in the Late Prehistory of the Iberian peninsula. 
+(4th-to 2nd millennia BC) is an ongoing PhD project developed in the [University of Seville](http://institucional.us.es/doctorhistoria/)
+
+
 The aim of this doctoral program is to explore a data driven
 approach to solve some of the main methodological challenges in the study of the
 socio-economic complexity in the late prehistory of the Iberian Peninsula and develop an
