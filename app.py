@@ -29,7 +29,7 @@ st.set_page_config(
     })
 
 timestr = time.strftime("%Y%m%d-%H%M")
-model = load_model('deployment_23072022')
+model = load_model('deployment_14082022.pkl')
 
 OPTIONS = ['Predict', 'Project', 'Model Metadata', 'Model Development']
 
