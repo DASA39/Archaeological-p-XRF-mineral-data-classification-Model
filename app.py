@@ -28,7 +28,11 @@ st.set_page_config(
         """
     })
 
+<<<<<<< HEAD
 timestr = time.strftime("%Y%m%d")
+=======
+timestr = time.strftime("%Y%m%d-%H%M")
+>>>>>>> experimental
 model = load_model('deployment_14082022')
 
 OPTIONS = ['Predict', 'Project', 'Model Metadata', 'Model Development']
@@ -139,6 +143,8 @@ digitalization of humanities.""")
         abstract
 
     elif page == 'Model Metadata':
+        image_pipeline = Image.open('pipeline.drawio.png')
+        st.image(image_pipeline,use_column_width='auto')
         st.sidebar.image('image.jpg')
         st.sidebar.write("""
          ## About""")
