@@ -1,4 +1,4 @@
-from ssl import Options
+#from ssl import Options # esta línea no es necesaria
 from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
@@ -28,8 +28,8 @@ st.set_page_config(
         """
     })
 
-timestr = time.strftime("%Y%m%d-%H%M")
-model = load_model('deployment_14082022.pkl')
+timestr = time.strftime("%Y%m%d")
+model = load_model('deployment_14082022')
 
 OPTIONS = ['Predict', 'Project', 'Model Metadata', 'Model Development']
 
@@ -103,13 +103,13 @@ elaboration of body adornments in prehistory that have both, an important weight
 the archaeological record and a relevant research tradition in the Iberian Peninsula 
 context. Thanks to the development of novel chemical analytical techniques, which are 
 both portable and non-destructive, in the last ten years it has been possible to record
-data of thousands of items of personal adornment made out of amber and variscite from 
+data of thousands of items of personal adornment made out of amber and variscite-like minerals from 
 more than 900 archaeological sites on the Iberian Peninsula through different projects, 
 which represents a first-rate experimental data set for the study of these subjects.
 Despite the existence of such relevant data sets, to date, there are both methodological
 and theoretical challenges in extracting knowledge from this type of resources due to the
 lack of comprehensive studies with a data-centred approach. Regarding the study of raw
-materials like amber or variscite minerals, it is still necessary to make exhaustive
+materials like amber or variscite-like minerals, it is still necessary to make exhaustive
 inventories of Iberian sources, mineralogical characterisation of items, and systematisation 
 of scattered and unpublished data among other urgent tasks that will improve or 
 reconsider provenance models used to explain the socio-economic dynamics in late prehistory.
@@ -143,29 +143,45 @@ digitalization of humanities.""")
         st.sidebar.write("""
          ## About""")
         metadata = (
-            """Pipeline(steps=[('dtypes',
-                 DataTypes_Auto_infer(ml_usecase='classification',
-                                      target='target')),
-                ('imputer',
-                 Simple_Imputer(categorical_strategy='not_available',
-                                fill_value_categorical=None,
-                                fill_value_numerical=None,
-                                numeric_strategy='mean',
-                                target_variable=None)),
-                ('new_levels1',
-                 New_Catagorical_Levels_in_TestData(replacement_strategy='least '
-                                                                         'frequent',
-                                                    targ...
-                ('clean_names', Clean_Colum_Names()),
-                ('feature_select', 'passthrough'), ('fix_multi', 'passthrough'),
-                ('dfs', 'passthrough'), ('pca', 'passthrough'),
-                ['trained_model',
-                 ExtraTreesClassifier(class_weight={}, criterion='entropy',
-                                      max_depth=5, max_features=1.0,
-                                      min_impurity_decrease=0.0002,
-                                      min_samples_leaf=5, min_samples_split=10,
-                                      n_estimators=150, n_jobs=-1,
-                                      random_state=123)]])        
+             """ Model: 
+
+               LGBMClassifier(bagging_fraction=0.7, bagging_freq=6, boosting_type='gbdt',
+               class_weight='balanced', colsample_bytree=1.0,
+               feature_fraction=0.5, importance_type='split', learning_rate=0.1,
+               max_depth=-1, min_child_samples=66, min_child_weight=0.001,
+               min_split_gain=0.4, n_estimators=90, n_jobs=-1, num_leaves=90,
+               objective=None, random_state=123, reg_alpha=0.0005,
+               reg_lambda=0.1, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+
+Pipeline:
+
+Pipeline(memory=None,
+          steps=[('dtypes',
+                  DataTypes_Auto_infer(categorical_features=[],
+                                       display_types=True, features_todrop=[],
+                                       id_columns=[],
+                                       ml_usecase='classification',
+                                       numerical_features=[], target='target',
+                                       time_features=[])),
+                 ('imputer',
+                  Simple_Imputer(categorical_strategy='not_available',
+                                 fill_value_categorical=None,
+                                 fill_value_numerical=None,
+                                 numeric_strat...
+                                 colsample_bytree=1.0, feature_fraction=0.5,
+                                 importance_type='split', learning_rate=0.1,
+                                 max_depth=-1, min_child_samples=66,
+                                 min_child_weight=0.001, min_split_gain=0.4,
+                                 n_estimators=90, n_jobs=-1, num_leaves=90,
+                                 objective=None, random_state=123,
+                                 reg_alpha=0.0005, reg_lambda=0.1, silent='warn',
+                                 subsample=1.0, subsample_for_bin=200000,
+                                 subsample_freq=0)]],
+          verbose=False)
+
+
+
 
 -------
 Type:        Pipeline
