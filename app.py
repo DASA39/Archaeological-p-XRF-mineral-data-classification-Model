@@ -322,7 +322,7 @@ https://scikit-learn.org/stable
         st.sidebar.image('image2.jpg')
         st.sidebar.write("""
          ## About
-         Have a look to the [Notebook](https://github.com/DASA39)""")
+         Have a look to the [Notebook](https://github.com/DASA39/Archaeological-p-XRF-mineral-data-classification-Model/blob/main/Model.ipynb)""")
 
 
 if __name__ == '__main__':
