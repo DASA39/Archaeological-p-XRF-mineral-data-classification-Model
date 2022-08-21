@@ -82,7 +82,7 @@ def run():
         st.sidebar.write("""
          ## About
           A Machine Learning model has been developed and trained to predict the mineral Group and Sub group to which a sample obtained from p-XRF belongs.
-          In order to use the model, tabular data is required. (see [template](https://github.com/DASA39))
+          In order to use the model, tabular data is required. (see [template](https://github.com/DASA39/Archaeological-p-XRF-mineral-data-classification-Model/blob/main/template.csv))
           Once a csv file has been upload, the model will predict and display the results in a new column called Label as well
           as the probability with which the algorithm scores its prediction.
           """)
