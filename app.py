@@ -13,26 +13,24 @@ st.set_page_config(
     initial_sidebar_state="expanded",
     menu_items={
         'Report a bug': "https://github.com/DASA39",
-        'About': """            
-         If you're seeing this, we would love your contribution! If you find bugs, please reach out or create an issue on our 
+        'About': """ 
+                   
+         If you're seeing this, I would really appreciate your contribution! If you find bugs or can provide some order, please reach out or create an issue on our 
          [GitHub](https://github.com/DASA39) repository. If you find that this interface doesn't do what you need it to, you can create an feature request 
-         at our repository or better yet, contribute a pull request of your own. You can reach out to the team on LinkedIn.
+         at our repository or better yet, contribute a pull request of your own. You can find me at dasa39 [at] gmail.com
     
          More documentation and contribution details are at our [GitHub Repository](https://github.com/DASA39).
         
          This app is the result of a PhD ongoing project titled: Exploring complexity through amber and variscite.
          Computational archaeology and geoarchaeological data in the Late Prehistory of Iberia.
-         A project develped by:
+         A project developed by:
          
         -Daniel Sánchez-Gómez
+        at University of Seville
         """
     })
 
-<<<<<<< HEAD
 timestr = time.strftime("%Y%m%d")
-=======
-timestr = time.strftime("%Y%m%d-%H%M")
->>>>>>> experimental
 model = load_model('deployment_14082022')
 
 OPTIONS = ['Predict', 'Project', 'Model Metadata', 'Model Development']
@@ -69,25 +67,30 @@ def run():
 
     if page == 'Predict':
 
-        st.title("Archaeological stone classification project")
+        st.title("Archaeological p-XRF mineral data classification Model (BETA)")
         file_upload = st.file_uploader(
             "Upload csv file for predictions", type=["csv"])
+          
 
         if file_upload is not None:
 
+            
             data = pd.read_csv(file_upload)
             predictions = predict_model(estimator=model, data=data)
             st.write(predictions)
             csv_downloader(predictions)
         st.sidebar.write("""
          ## About
-          This is the core of the application. A Machine Learning model has been developed and trained to predict the mineral class to which a sample obtained from XRF belongs.
+          A Machine Learning model has been developed and trained to predict the mineral Group and Sub group to which a sample obtained from p-XRF belongs.
+          In order to use the model, tabular data is required. (see template)
           Once a csv file has been upload, the model will predict and display the results in a new column called Label as well
           as the probability with which the algorithm scores its prediction.
           """)
+         
 
     elif page == 'Project':
         st.header("Exploring complexity through amber and variscite. Computational archaeology and geoarchaeological data in the Late Prehistory of the Iberian peninsula. (4th-to 2nd millennia BC)")
+        st.sidebar.image('image.jpg')
         abstract = (""" 
          
          ## Abstract:
@@ -112,7 +115,7 @@ more than 900 archaeological sites on the Iberian Peninsula through different pr
 which represents a first-rate experimental data set for the study of these subjects.
 Despite the existence of such relevant data sets, to date, there are both methodological
 and theoretical challenges in extracting knowledge from this type of resources due to the
-lack of comprehensive studies with a data-centred approach. Regarding the study of raw
+lack of comprehensive studies with a data-driven approach. Regarding the study of raw
 materials like amber or variscite-like minerals, it is still necessary to make exhaustive
 inventories of Iberian sources, mineralogical characterisation of items, and systematisation 
 of scattered and unpublished data among other urgent tasks that will improve or 
@@ -128,24 +131,22 @@ digitalization of humanities.
         st.sidebar.write("""
          ## About
 
-### Summary:
+### 
 
 Exploring complexity through amber and variscite. Computational archaeology and
 geoarchaeological data in the Late Prehistory of the Iberian peninsula. 
-(4th-to 2nd millennia BC) is an ongoing PhD project developed in the [University of Seville](http://institucional.us.es/doctorhistoria/)
+is an ongoing PhD project developed in the [University of Seville](http://institucional.us.es/doctorhistoria/)
 
 
-The aim of this doctoral program is to explore a data driven
-approach to solve some of the main methodological challenges in the study of the
-socio-economic complexity in the late prehistory of the Iberian Peninsula and develop an
-Open Access approach for the publication of results in accordance with the necessity of
+The aim of this doctoral program is to explore a data-driven
+approach to solving some of the main methodological challenges in the study of the
+socio-economic complexity in the late prehistory of the Iberian Peninsula and develop
+Open Access alternatives for the publication of results in accordance with the necessity of
 digitalization of humanities.""")
         abstract
 
     elif page == 'Model Metadata':
-        image_pipeline = Image.open('pipeline.drawio.png')
-        st.image(image_pipeline,use_column_width='auto')
-        st.sidebar.image('image.jpg')
+       
         st.sidebar.write("""
          ## About""")
         metadata = (
@@ -298,11 +299,13 @@ https://scikit-learn.org/stable
         st.download_button('Download Model Metadata', metadata)
 
     elif page == 'Model Development':
+        image_pipeline = Image.open('pipeline.drawio.png')
+        st.image(image_pipeline,width=1500) #use_column_width
+        
         st.sidebar.image('image2.jpg')
         st.sidebar.write("""
          ## About
-         Aqui va el enlace directo al notebook del modelo
-         [GitHub](https://github.com/DASA39)""")
+         Have a look to the [Notebook](https://github.com/DASA39)""")
 
     # if file_upload is not None:
        #data = pd.read_csv(file_upload)
