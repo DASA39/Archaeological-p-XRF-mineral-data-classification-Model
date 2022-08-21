@@ -26,7 +26,11 @@ st.set_page_config(
          A project developed by:
          
         -Daniel Sánchez-Gómez
-        at University of Seville
+        at University of Seville-
+
+        
+
+
         """
     })
 
