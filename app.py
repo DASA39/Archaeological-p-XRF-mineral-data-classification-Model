@@ -16,10 +16,10 @@ st.set_page_config(
         'About': """ 
                    
          If you're seeing this, I would really appreciate your contribution! If you find bugs or can provide some order, please reach out or create an issue on our 
-         [GitHub](https://github.com/DASA39) repository. If you find that this interface doesn't do what you need it to, you can create an feature request 
+         [GitHub](https://github.com/DASA39/Archaeological-p-XRF-mineral-data-classification-Model) repository. If you find that this interface doesn't do what you need it to, you can create an feature request 
          at our repository or better yet, contribute a pull request of your own. You can find me at dasa39 [at] gmail.com
     
-         More documentation and contribution details are at our [GitHub Repository](https://github.com/DASA39).
+         More documentation and contribution details are at our [GitHub Repository](https://github.com/DASA39/Archaeological-p-XRF-mineral-data-classification-Model).
         
          This app is the result of a PhD ongoing project titled: Exploring complexity through amber and variscite.
          Computational archaeology and geoarchaeological data in the Late Prehistory of Iberia.
@@ -64,8 +64,6 @@ def csv_downloader(data):
 
 def run():
 
-    #st.title("Archaeological stone classification project")
-    #file_upload = st.file_uploader("Upload csv file for predictions", type=["csv"])
 
     page = st.sidebar.radio('Navigation', OPTIONS)
 
@@ -147,12 +145,6 @@ distribution maps of stones and amber in Late Prehistory of Iberia.
 different from those of already known Baltic, Sicilian or Cantabrian deposits used during Late Prehistory
 
 * To Develop open-access applications for the public use of the tools developed. 
-
-
-
-
-
-
          """)
         st.sidebar.write("""
          ## About
