@@ -1,4 +1,4 @@
-#from ssl import Options # esta línea no es necesaria
+# from ssl import Options # esta línea no es necesaria
 from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
@@ -70,11 +70,9 @@ def run():
         st.title("Archaeological p-XRF mineral data classification Model (BETA)")
         file_upload = st.file_uploader(
             "Upload csv file for predictions", type=["csv"])
-          
 
         if file_upload is not None:
 
-            
             data = pd.read_csv(file_upload)
             predictions = predict_model(estimator=model, data=data)
             st.write(predictions)
@@ -82,11 +80,10 @@ def run():
         st.sidebar.write("""
          ## About
           A Machine Learning model has been developed and trained to predict the mineral Group and Sub group to which a sample obtained from p-XRF belongs.
-          In order to use the model, tabular data is required. (see template)
+          In order to use the model, tabular data is required. (see [template](https://github.com/DASA39))
           Once a csv file has been upload, the model will predict and display the results in a new column called Label as well
           as the probability with which the algorithm scores its prediction.
           """)
-         
 
     elif page == 'Project':
         st.header("Exploring complexity through amber and variscite. Computational archaeology and geoarchaeological data in the Late Prehistory of the Iberian peninsula. (4th-to 2nd millennia BC)")
@@ -110,22 +107,47 @@ elaboration of body adornments in prehistory that have both, an important weight
 the archaeological record and a relevant research tradition in the Iberian Peninsula 
 context. Thanks to the development of novel chemical analytical techniques, which are 
 both portable and non-destructive, in the last ten years it has been possible to record
-data of thousands of items of personal adornment made out of amber and variscite-like minerals from 
-more than 900 archaeological sites on the Iberian Peninsula through different projects, 
-which represents a first-rate experimental data set for the study of these subjects.
-Despite the existence of such relevant data sets, to date, there are both methodological
-and theoretical challenges in extracting knowledge from this type of resources due to the
-lack of comprehensive studies with a data-driven approach. Regarding the study of raw
-materials like amber or variscite-like minerals, it is still necessary to make exhaustive
+data of thousands of items of personal adornment made out of amber and variscite-like 
+minerals from more than 900 archaeological sites on the Iberian Peninsula through
+different projects, which represents a first-rate experimental data set for the study of 
+these subjects. Despite the existence of such relevant data sets, to date, there are both 
+methodological and theoretical challenges in extracting knowledge from this type of resources
+due to the lack of comprehensive studies with a data-driven approach. Regarding the study of 
+raw materials like amber or variscite-like minerals, it is still necessary to make exhaustive
 inventories of Iberian sources, mineralogical characterisation of items, and systematisation 
-of scattered and unpublished data among other urgent tasks that will improve or 
-reconsider provenance models used to explain the socio-economic dynamics in late prehistory.
-Through the use of different techniques of Computational archaeology such as Data
-mining and Machine Learning, the aim of this doctoral program is to explore a data driven
-approach to solve some of the main methodological challenges in the study of the
-socio-economic complexity in the late prehistory of the Iberian Peninsula and develop an
-Open Access approach for the publication of results in accordance with the necessity of
-digitalization of humanities.
+of scattered and unpublished data among other urgent tasks that will improve or reconsider 
+provenance models used to explain the socio-economic dynamics in late prehistory. Through 
+the use of different techniques of Computational archaeology such as Data mining and 
+Machine Learning, the aim of this doctoral program is to explore a data driven approach to 
+solve some of the main methodological challenges in the study of the socio-economic complexity 
+in the late prehistory of the Iberian Peninsula and develop an Open Access approach for 
+publication of results in accordance with the necessity of digitalization of humanities.
+
+### Aim:
+
+To explore the socio-economic dynamics in Late Prehistory of the Iberian Peninsula associated with 
+the use of body adornments of Amber and green stones through a data-driven approach that allows the 
+development of open-access computational tools for the study of social complexity in prehistory.
+
+ #### objectives:
+
+* To Develop a Data engineering pipeline to collect, explore and create geoarchaeological data sets
+for the study of body ornaments of different minerals in the Iberian Peninsula.
+
+* To Develop machine learning-based models of mineral composition data to facilitate provenance and 
+distribution maps of stones and amber in Late Prehistory of Iberia.
+
+* To build  data sets of FTIR spectra of Iberian amber to be used in the development of machine learning-based models.
+
+* Characterise the Iberian sources to certify that the FTIR spectra of these amber deposits are 
+different from those of already known Baltic, Sicilian or Cantabrian deposits used during Late Prehistory
+
+* To Develop open-access applications for the public use of the tools developed. 
+
+
+
+
+
 
          """)
         st.sidebar.write("""
@@ -143,14 +165,14 @@ approach to solving some of the main methodological challenges in the study of t
 socio-economic complexity in the late prehistory of the Iberian Peninsula and develop
 Open Access alternatives for the publication of results in accordance with the necessity of
 digitalization of humanities.""")
-        abstract
+        st.markdown(abstract, unsafe_allow_html=False)
 
     elif page == 'Model Metadata':
-       
+
         st.sidebar.write("""
          ## About""")
         metadata = (
-             """ Model: 
+            """ Model: 
 
                LGBMClassifier(bagging_fraction=0.7, bagging_freq=6, boosting_type='gbdt',
                class_weight='balanced', colsample_bytree=1.0,
@@ -300,22 +322,11 @@ https://scikit-learn.org/stable
 
     elif page == 'Model Development':
         image_pipeline = Image.open('pipeline.drawio.png')
-        st.image(image_pipeline,width=1500) #use_column_width
-        
+        st.image(image_pipeline, width=1500)
         st.sidebar.image('image2.jpg')
         st.sidebar.write("""
          ## About
          Have a look to the [Notebook](https://github.com/DASA39)""")
-
-    # if file_upload is not None:
-       #data = pd.read_csv(file_upload)
-       #predictions = predict_model(estimator=model,data=data)
-       # st.write(predictions)
-       # csv_downloader(predictions)
-
-
-# Función de Interfaz de Usuario
-# def run_UI():
 
 
 if __name__ == '__main__':
