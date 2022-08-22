@@ -1,5 +1,7 @@
 pycaret==2.3.4
 pandas==1.1.5
-streamlit==1.10.0
+streamlit
+
+
 
 
